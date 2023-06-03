@@ -17,14 +17,40 @@ app.use(router)/// เพิ่มเราเตอ
 app.use(express.static(path.join(__dirname,'public'))) //index.html จะเป็นหน้าเเรกเสมอ ต้องมี
 //app.use(router)
 
-router.get('/', (req, res) =>{
+// router.get('/', (req, res) =>{
+//     res.render('index')
+// })
+
+// router.get('/about', (req, res) =>{
+//     res.send("This is API running2 ")
+// })
+
+router.get('/',(req,res)=>{ //หน้าเเรกเป็น ejs
     res.render('index')
 })
-
-router.get('/about', (req, res) =>{
-    res.send("This is API running2 ")
+//const path = require('path')
+router.get('/cal',(req,res)=>{
+    res.render('cal')
 })
 
+router.get('/taxi_limou',(req,res)=>{
+    res.render('taxi_limou')
+})
 
+router.get('/taxi',(req,res)=>{
+    res.render('taxi')
+})
+
+router.get('/taxi_information',(req,res)=>{
+    res.render('taxi_information')
+})
+
+router.get('/limuresult',(req,res)=>{
+    res.render('limuresult')
+})
+
+router.get('/limousine_information',(req,res)=>{
+    res.render('limousine_information')
+})
 
 module.exports = app
