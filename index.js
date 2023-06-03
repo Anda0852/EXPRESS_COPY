@@ -1,14 +1,18 @@
 const express = require('express')
-const express = express()
-const PORT = 4000
+const app = express()
+const path = require('path')
+
+//app.get('/api/users',(req,res){});
+
+app.use(express.static(path.join(__dirname, 'public')));
+const PORT = process.env .PORT || 5000;
 
 app.listen(PORT, () => {
-    console.log(`APi Listening on potr ${PORT}`)
+console.log(`APi Listening on potr ${PORT}`)
 })
 
-app.get('/',(req,res)=>{ //หน้าเเรกเป็น ejs
-    res.render('index')
+app.get('/' ,(req, res)=>{
+    res.render('index.html')
 })
-
 
 module.export = app
