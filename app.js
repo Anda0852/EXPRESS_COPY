@@ -25,6 +25,11 @@ app.get('/', (req, res) =>{
     res.send("This is API running ")
 })
 
+app.get('/about', (req, res) =>{
+    res.send("This is API running2 ")
+})
+
+
 
 module.exports = app
 //ejs 
