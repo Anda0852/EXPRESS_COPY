@@ -18,7 +18,7 @@ app.use(express.static(path.join(__dirname,'public'))) //index.html จะเป
 //app.use(router)
 
 router.get('/', (req, res) =>{
-    res.send("This is API running ")
+    res.render('index')
 })
 
 router.get('/about', (req, res) =>{
