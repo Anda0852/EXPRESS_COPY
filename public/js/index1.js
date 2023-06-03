@@ -46,17 +46,17 @@ function getDirections() {
           localStorage.setItem("request", JSON.stringify(request));
           //go to directions page
           if (request.origin === "Phuket International Airport (HKT), Mai Khao, Thalang District, Phuket, Thailand") {
-            window.location.href = "/taxi_limou";
+            window.location.href = "taxi_limou.html";
           }else if (request.origin === "สนามบินภูเก็ต (HKT) Mai Khao, Thalang District, Phuket, Thailand"){
-              window.location.href = "/taxi_limou";
+              window.location.href = "taxi_limou.html";
           }
           else if (request.origin === "Phuket International Airport (HKT), ตำบล ไม้ขาว อำเภอถลาง ภูเก็ต ประเทศไทย") {
-            window.location.href = "/taxi_limou";
+            window.location.href = "taxi_limou.html";
           }else if (request.origin === "สนามบินภูเก็ต (HKT) ตำบล ไม้ขาว อำเภอถลาง ภูเก็ต ประเทศไทย") {
-            window.location.href = "/taxi_limou";
+            window.location.href = "taxi_limou.html";
           }
           else {
-            window.location.href = "/taxi";
+            window.location.href = "taxi.html";
           }
         }
 

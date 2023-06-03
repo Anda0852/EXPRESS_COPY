@@ -39,6 +39,14 @@ function changeLanguage(lang) {
                 en: 'NEXT',
                 th: 'ถัดไป'
             },
+            imfrom : {
+                en: 'Origin',
+                th: 'จุดเริ่มต้นของคุณคือที่ไหน'
+            },
+            to : {
+                en: 'destination',
+                th: 'คุณอยากจะไปที่ไหน'
+            },
             taxi : {
                 en: 'TAXI-METER',
                 th: 'แท็กซี่-มิเตอร์'
