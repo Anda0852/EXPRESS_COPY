@@ -17,20 +17,14 @@ app.use(router)/// เพิ่มเราเตอ
 app.use(express.static(path.join(__dirname,'public'))) //index.html จะเป็นหน้าเเรกเสมอ ต้องมี
 //app.use(router)
 
-// app.listen(8080,()=>{
-//     console.log("server run as port 8080")
-// })
-
-app.get('/', (req, res) =>{
+router.get('/', (req, res) =>{
     res.send("This is API running ")
 })
 
-app.get('/about', (req, res) =>{
+router.get('/about', (req, res) =>{
     res.send("This is API running2 ")
 })
 
 
 
 module.exports = app
-//ejs 
-// npm install ejs
